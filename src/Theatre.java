@@ -3,9 +3,9 @@ public class Theatre {
 
     public static void main(String[] args) {
 
-        Actor actor1 = new Actor("Михаил", "Барышников", Person.Gender.MALE, 170.5);
+        Actor actor1 = new Actor("Михаил", "Барышников", Person.Gender.MALE, 170);
         Actor actor2 = new Actor("Михаил", "Фокин", Person.Gender.MALE, 170);
-        Actor actor3 = new Actor("Сергей", "Полунин", Person.Gender.MALE, 165.5);
+        Actor actor3 = new Actor("Сергей", "Полунин", Person.Gender.MALE, 165);
         System.out.println(actor1.toString());
         System.out.println(actor2.toString());
         System.out.println(actor3.toString());
