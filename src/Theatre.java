@@ -17,21 +17,21 @@ public class Theatre {
         System.out.println(director2.toString());
 
 
-        MusicComposer composer = new MusicComposer("Пётр Чайковский");
+        MusicComposer composer = new MusicComposer("Пётр", "Чайковский", Person.Gender.MALE);
         System.out.println(composer.toString());
 
 
-        Choreographer choreographer = new Choreographer("Лев Лукин");
+        Choreographer choreographer = new Choreographer("Лев", "Лукин", Person.Gender.MALE );
         System.out.println(choreographer.toString());
 
 
         Show show = new Show("Обычный", 120, "Александр Горский");
 
         Opera opera = new Opera("Оперный", 90, "Юрий Григорович", 20,
-                "Пётр Чайковский", "текст либретто");
+                 composer, "текст либретто");
 
         Ballet ballet = new Ballet("Балет", 60, "Александр Горский",
-                "Пётр Чайковский", "Текст либретто", "Лев Лукин");
+                composer, "Текст либретто", choreographer);
 
         System.out.println(show.toString());
         System.out.println(opera.toString());

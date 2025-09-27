@@ -1,15 +1,13 @@
-public class Choreographer {
-    private String name;
+public class Choreographer extends Person {
 
-    public Choreographer(String name) {
-
-        this.name = name;
+    public Choreographer(String name, String surname, Gender gender) {
+        super(name, surname, gender);
     }
 
     @Override
     public String toString() {
 
-        return "Хореограф: " + name + ".";
+        return  "хореограф: " + getName() + " " + getSurname() + ".";
     }
 }
 

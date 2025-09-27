@@ -1,25 +1,13 @@
-public class MusicComposer {
-    private String name;
+public class MusicComposer extends Person {
 
-    public String getName() {
-
-        return name;
-    }
-
-    public void setName(String name) {
-
-        this.name = name;
-    }
-
-    public MusicComposer(String name) {
-
-        this.name = name;
+    public MusicComposer(String name, String surname, Gender gender) {
+        super(name, surname, gender);
     }
 
 
     @Override
     public String toString() {
 
-        return "Автор музыки: " + name + ".";
+        return "Автор музыки: " + getName() + " " + getSurname() ;
     }
 }
